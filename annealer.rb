@@ -16,7 +16,7 @@ module PuzzleHunt
 
         if k % 1000 == 0
           puts "Step: #{k}, Temp: #{t}, Energy: #{e}"
-          state.each {|row| p row }
+          p state
         end
 
         state_ = neighbor.call(state)
